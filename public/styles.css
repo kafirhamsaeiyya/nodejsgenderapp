@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+input {
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+input[type=submit] {
+    border-radius: 15px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: lightgreen;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+input[type=text] {
+    outline: none;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+  }
+  
