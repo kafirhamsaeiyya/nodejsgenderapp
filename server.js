@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var request = require("request");
 var app = express();
-
+const port = process.env.PORT || 8000;
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
@@ -25,6 +25,6 @@ app.post('/', (req, res) => {
         }
     })
 })
-app.listen(5656, () => {
-    console.log("http://localhost:5656");
+app.listen(port, () => {
+    console.log("App is running on port " + port);
 })
